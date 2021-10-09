@@ -1,0 +1,40 @@
+{
+    "name": "SenuGamerBoy/Text-to-Quote",
+    "description": "A Simple Telegram Bot",
+    "keywords": [
+        "telegram",
+        "inline",
+        "torrent",
+        "search",
+        "bot"
+    ],
+    "repository": "https://github.com/SenuGamerBoy/Text-to-Quote",
+    "website": "https://github.comSenuGamerBoy/Text-to-Quote",
+    "success_url": "https://github.com/SenuGamerBoy/Text-to-Quote",
+    "env": {
+        "API_ID": {
+            "description": "Get this value from my.telegram.org "
+        },
+        "API_HASH": {
+            "description": "Get this value from my.telegram.org "
+        },
+        "SESSION_NAME": {
+            "description": "Any Bot Session Name. You can keep default!",
+            "value": "Quotee_Robot"
+        },
+        "BOT_TOKEN": {
+            "description": "Your Telegram Bot Token by @BotFather"
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
