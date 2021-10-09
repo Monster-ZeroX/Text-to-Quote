@@ -8,8 +8,8 @@ from configs import Config
 
 TorrentBot = Client(session_name=Config.SESSION_NAME, api_id=Config.API_ID, api_hash=Config.API_HASH, bot_token=Config.BOT_TOKEN)
 DEFAULT_SEARCH_MARKUP = [
-                    [InlineKeyboardButton("privacy policy 🍀", url="https://telegra.ph/Quotee-Robot-Privacy-Policy-10-09"),
-                     InlineKeyboardButton("🔎Go Inline", switch_inline_query="!yts ")],
+                    [InlineKeyboardButton("privacy policy 🍀", url="https://telegra.ph/Quotee-Robot-Privacy-Policy-10-09")],
+                    [InlineKeyboardButton("Support 🩹", url="https://t.me/senuinfinitygroup")],
                     [InlineKeyboardButton("👨‍💻Updates channel ", url="https://t.me/senuinfinity")]
                 ]
 
