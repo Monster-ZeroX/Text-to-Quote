@@ -6,7 +6,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message, 
 
 from configs import Config
 
-TorrentBot = Client(session_name=Config.SESSION_NAME, api_id=Config.API_ID, api_hash=Config.API_HASH, bot_token=Config.BOT_TOKEN)
+Quotee_Robot = Client(session_name=Config.SESSION_NAME, api_id=Config.API_ID, api_hash=Config.API_HASH, bot_token=Config.BOT_TOKEN)
 DEFAULT_SEARCH_MARKUP = [
                     [InlineKeyboardButton("privacy policy 🍀", url="https://telegra.ph/Quotee-Robot-Privacy-Policy-10-09")],
                     [InlineKeyboardButton("Support 🩹", url="https://t.me/senuinfinitygroup")],
@@ -30,3 +30,6 @@ async def start_handler(_, message: Message):
         print(f"[{Config.SESSION_NAME}] - Sleeping for {e.x}s")
         await asyncio.sleep(e.x)
         await start_handler(_, message)
+
+Quotee_Robot.run()
+        
